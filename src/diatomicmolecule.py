@@ -13,6 +13,7 @@ def create_diatomic_molecule_geometry(species1, species2, bond_length):
     """
 
     geometry = {"sites": [
+        {'species': species2, 'x': 0, 'y': 0, 'z': -bond_length}
         {'species': species1, 'x': 0, 'y': 0, 'z': 0},
         {'species': species2, 'x': 0, 'y': 0, 'z': bond_length}
     ]}
